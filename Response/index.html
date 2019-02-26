@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/ism-2.1.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+<title>Home Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="images/logo.png" width="16">
+</head>
+
+<body>
+<header>
+<img src="images/logo2.png"  alt="image of logo (lighthouse with Beacon Films)" class="logo"> 
+</header>
+<nav class="clearfix">
+<a href="#" id="pull">Navigation</a>
+		<ul class="clearfix">
+        
+    	<li><a href="index.html" class="current_page">Home</a></li>
+        <li><a href="drogheda.html">Drogheda River Rescue</a></li>
+        <li><a href="waterfordmr.html">Waterford Marine Rescue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<iframe width="86%" height="484" src="https://www.youtube.com/watch?v=zSHm7gv9BFk" frameborder="0" allowfullscreen class="video"></iframe>
+<h2>Who are we?</h2>
+
+<div class="indexP">
+<p>Hi folks!
+We are second year Creative Digital Media students studying in Blanchardstown IT and this year we start out ‘group project’, which will take the whole school year to complete.</p>
+<br><br>
+<p>So, what is our group project module and what do we have to produce? Our group project module gets us use to working in groups with a hands on approach. With this, we are tasked with creating either a video.</p>
+<br><br>
+<p>We have chosen to do a video and the topic of our video will be a documentary/awareness video about the voluntary work of those who risk their lives every day out in the water. We are working in association with the Drogeheda River Rescue and Recovery, Waterford Marine Search and Rescue, and Dublin Wicklow Mountain Rescue Team.</p>
+<p>Below is a teaser of whats to come.
+Thanks for reading!</p>
+</div>
+
+
+
+<div class="row">
+
+<div class="col">
+	<h3 class="centerheader">Drogehda River Rescue</h3>
+<a href="drogheda.html"><img src="images/drrlogo.png" width="95" height="100" alt="drogehda logo" class="logocenter"></a>
+    <p>Drogheda river rescue and recovery service was founded in 1972, the voluntary rescue committee was set up after the tragic drowning of a young child in the River Boyne. The Drogeheda River Rescue are extremely active and safe countless lifes. <a href="drogheda.html"><br><br>Read More..</a></p>
+    
+</div>
+
+<div class="col">
+<h3 class="centerheader">Waterford Marine Rescue</h3>
+<img src="images/waterford.png" width="100" height="100" alt="" class="logocenter">
+<p>We are a non-profit organisation which operates a voluntary Search and Rescue Service on the River Suir from Mount Congreve to Checkpoint.<a href="waterfordmr.html"><br><br>Read More..</a> </p>
+    
+</div>
+</div>
+
+
+<footer>
+<div class="footerright">
+<a href="https://www.facebook.com/responsefilm2016/"><img src="images/facebook2.png" width="32" height="32" alt="facebook Icon/Link" class="socialicons"></a>
+<a href=""><img src="images/insta.png" width="32" height="32" alt="instagram Icon/Link" class="socialicons"></a>
+
+<a href="https://twitter.com/beaconfilms495"><img src="images/twitter.png" width="32" height="32" alt="twitter Icon/Link" class="socialicons"></a>
+
+<a href="https://beaconfilmsblog.wordpress.com/"><img src="images/blogspot.png" width="32" height="32" alt="blogspot/Link" class="socialicons"></a>
+
+</div>
+</footer>
+
+</body>
+</html>

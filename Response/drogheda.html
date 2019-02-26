@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/ism-2.1.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+<title>Home Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="images/logo.png" width="16">
+</head>
+
+<body>
+<header>
+<img src="images/logo2.png"  alt="image of logo (lighthouse with Beacon Films)" class="logo"> 
+</header>
+<nav class="clearfix">
+<a href="#" id="pull">Navigation</a>
+		<ul class="clearfix">
+        
+    	<li><a href="index.html" >Home</a></li>
+        <li><a href="drogheda.html" class="current_page">Drogheda River Rescue</a></li>
+        <li><a href="waterfordmr.html">Waterford Marine Rescue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+<h2>Drogheda River Rescue</h2>
+<div class="drrlogo">
+<br><br>
+<img src="images/drrlogo.png" width="195" height="200" alt=""/>
+</div>
+<div class="droghedatxt">
+<p>Drogheda river rescue and recovery service was founded in 1972, the voluntary rescue committee was set up after the tragic drowning of a young child in the River Boyne.</p>
+<br>
+<p> An intensive fundraising campaign was mounted and by the end of May of that year £900 had been collected, thanks to the generosity of all concerned</p>
+<br>
+<p> a 13ft dory boat was purchased on whit Sunday it was proudly put on display on west street, The boat was initially stored in a shed up until the committee along with support of many local people and Drogheda borough council acquired the premises were the Rescue boathouse is 
+at the moment at horselane.</p>
+<br>
+<p>We have worked extensively with Drogheda river rescue. They feature heavily in our Documentary. For more information about the work involved by drogehda and how we worked with them visit our blog <a href="https://beaconfilmsblog.wordpress.com "> here.</a></p>
+</div>
+
+<div class="donate"><a href="https://www.idonate.ie/1005_drogheda-river-rescue-and-recovery-service.html"><img src="images/donate.png" alt="donate button" class="donatebutton"></a></div>
+
+<p class="droghedap">Visit Drogheda's <a href="https://www.facebook.com/droghedariverrescue/?fref=ts">Facebook</a> and <a href="https://twitter.com/Drogheda_Rescue">Twitter</a></p>
+ 
+
+
+<footer>
+<div class="footerright">
+<a href="https://www.facebook.com/responsefilm2016/"><img src="images/facebook2.png" width="32" height="32" alt="Twitter Icon/Link" class="socialicons"></a>
+<a href=""><img src="images/insta.png" width="32" height="32" alt="Facebook Icon/Link" class="socialicons"></a>
+
+<a href="https://twitter.com/beaconfilms495"><img src="images/twitter.png" width="32" height="32" alt="Facebook Icon/Link" class="socialicons"></a>
+
+<a href="https://beaconfilmsblog.wordpress.com/"><img src="images/blogspot.png" width="32" height="32" alt="blogspot/Link" class="socialicons"></a>
+
+</div>
+</footer>
+
+</body>
+</html>

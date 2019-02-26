@@ -1,0 +1,254 @@
+* {
+	margin:0;
+	padding:0;
+}
+	
+
+body {
+		font-family: geosans,Tahoma, Geneva, sans-serif;
+		font-size:1.1em;
+		background-image: url("../images/bg.jpg");
+		color:#404041;
+}
+header {
+		padding:10px;
+		background-color:#404041;
+	
+}
+	
+h2 {
+		text-align: center;
+		margin-top:50px;
+}
+.logo {
+	width:150px;
+	margin:1% 0 3% 5%;
+	
+		/*margin-left:45%;
+		width:120px;
+		height:120px;
+		border-radius:100px;
+		background-color:white;
+		
+		*/
+}
+
+.video {
+	margin:2% 5% 0 8%;
+	text-align:center;
+		
+}
+.indexP {
+		padding:2%;
+		margin:0 5% 5% 5%;
+}
+/* ----------------Font Face --------------*/
+@font-face {
+    font-family: "geosans";
+    src: url(../fonts/GeosansLight.ttf);
+}		
+/* ----------------Nav Css --------------*/
+
+
+nav ul {
+	background-color:#404041;
+	list-style-type:none;
+	text-align:center;
+	padding:0.5%;
+	
+	
+}
+nav ul li {
+	display:inline;
+	
+}
+nav ul li a {
+	color:#de7419;
+	text-decoration: none;
+	padding:0 5% 0 5%;
+
+}
+nav ul li a:hover {
+	background-color:#E0E0E0;
+
+	border-bottom:2px solid white;
+}
+.current_page {
+	background-color:#E0E0E0;
+
+	border-bottom:2px solid white;
+}
+
+
+/* ----------------Footer --------------*/
+footer {
+		padding:10px;
+		background-color:#404041;
+		clear:both;
+}
+.footeright {
+		float:right;
+}
+.socialicons {
+	text-align:right;
+	background-color:white;
+	border-radius:50%;
+}
+.row {
+		width:100%;
+		text-align:center;
+		margin:0 auto;
+		
+}
+.col {
+		display:block;
+		padding:2%;
+		margin:2%;
+		width:40%;
+		float:left;
+		text-align:left;
+}
+.logocenter {
+		margin:4% 0 4% 35%;
+		background-color:white;
+		border-radius:100%;
+		
+		
+}
+.centerheader {
+		text-align:center;
+		padding:2%;
+}
+/* Collapsable Nav - Responsive */
+/*------------------------ Collapse navigation --------------------*/	
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+	
+nav a#pull {
+	text-decoration:none;
+	display: none;
+}
+
+/* Responsive  */
+
+/*---------------------- Smartphone & Small Tablet-----------------------*/
+@media (min-width:320px) and (max-width: 736px){ 
+	
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	
+	nav ul li {
+		border-bottom: 1px dotted #de7419;
+		display: block;
+		padding: 5px 0;
+	}
+	
+	nav a#pull {
+		display: block;
+		color: #de7419;
+		background-color: #404041;
+		height: 20px;
+		padding: 10px;
+		text-align: left;
+		position: relative;
+		margin: 0 0 10px 0;
+	}
+	
+	nav a#pull:after {
+		content:"";
+		background: url(../images/nav-icon.png) no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 25px;
+		top: 10px;
+	}
+.logo {
+		width:100px;
+}
+}
+
+
+/* Tablet */
+@media (min-width:768px) and (max-width: 1024px){ 
+	.logo {
+		width:120px;
+}
+}
+
+
+
+
+
+/*------------------- Drogehda River Rescue Page -------------------*/
+.drrlogo {
+		text-align:center;
+}
+.droghedap {
+		clear:both;
+		padding:2%;
+		marging:2%;
+		text-align:center;
+		
+}
+.droghedatxt {
+	margin:5%;
+}
+/*------------------- WATERFORD River Rescue Page -------------------*/
+
+		
+
+/*--------------------- Contact page -------------------*/
+.contactp {
+	padding:5%;
+	
+}
+.contactp2 {
+	padding:4%;
+	clear:both;
+	
+}
+
+.colcontact {
+		display:block;
+		padding:2%;
+		margin:2%;
+		width:15%;
+		float:left;
+		text-align:left;
+}
+
+h3 {
+		margin: 0 0 0 6%;
+}
+
+/* Donate */
+.donate{
+	text-align:center;
+	
+}
+.donatebutton {
+	clear:both;
+	width:200px;
+}
+.donatebox {
+	background: #de7419;
+	border: 3px solid #404041;
+	width:20%;
+	margin:5%;
+	margin:0 auto;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
